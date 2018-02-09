@@ -24,7 +24,7 @@ fi
 
 for i in ${TOP_FONTS[*]}; do
     echo "Downloading $i"; echo
-    wget -c https://github.com/hbin/top-programming-fonts/raw/master/$i \
+    wget -c https://github.com/dima1034/top-programming-fonts/raw/master/$i \
       || die "Fail to download ${i}"
     mv $i $FONTS_DIR || die "Could not install $i"
     echo "Installed $i successfully"; echo
